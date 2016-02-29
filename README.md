@@ -42,7 +42,7 @@ By now you have the following methods on your ArrayList class:
 - `ArrayList#add(element)`
 - `ArrayList#get(index)`
 - `ArrayList#set(index, element)`
-- `ArrayList#size(element)`
+- `ArrayList#size`
 - `ArrayList#insert(index, element)`
 
 For each of these methods, determine the big-O complexity of the method. Create a file `complexity.md` and write the big-O for each method, explaining why.
