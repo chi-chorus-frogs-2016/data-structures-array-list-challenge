@@ -1,31 +1,29 @@
 require_relative 'fixed_array'
 
 class ArrayList
-  attr_reader :array
 
   def initialize(fixed_array)
     @array = fixed_array
   end
 
   def add(element)
-    new_array = FixedArray.new(@array.size * 2)
+    new_array = FixedArray.new(@array.size)
     new_array.set(@array.size, element)
-    third_array = FixedArray.new(1, new_array)
-    # new_array.slice!(@array.size + 2, -1)
     @array = new_array
   end
 
   def get(index)
+    @array.get(index)
   end
 
   def set(index, element)
-  end
-
-  def size
+    @array.set(index, element)
   end
 
 end
 
 array = ArrayList.new(FixedArray.new)
-array.add("yes")
+p array.add("yes")
+p array.get(4)
+p array.set(0, "no")
 p array

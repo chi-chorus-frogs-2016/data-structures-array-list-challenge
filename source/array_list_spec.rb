@@ -2,12 +2,12 @@ require_relative 'array_list'
 
 describe ArrayList do
 
-  describe '#initialize' do
-    let(:array) { ArrayList.new(FixedArray.new) }
-    it 'creates a new ArrayList' do
-      expect(array.array).to be_a(FixedArray)
-    end
-  end
+  # describe '#initialize' do
+  #   let(:array) { ArrayList.new(FixedArray.new) }
+  #   it 'creates a new ArrayList' do
+  #     expect(array.array).to be_a(FixedArray)
+  #   end
+  # end
 
   describe '#add' do
     let(:array) { ArrayList.new(FixedArray.new) }
