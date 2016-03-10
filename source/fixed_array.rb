@@ -1,9 +1,7 @@
 class FixedArray
-  attr_reader :array
 
   def initialize(capacity = 4)
     @array = Array.new(capacity, nil)
-    # @size = capacity
   end
 
   def get(index)
